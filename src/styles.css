@@ -1,0 +1,18 @@
+a:visited {
+    color: #708b75;
+  }
+  
+  a:hover {
+    color: #16302b;
+  }
+  a:link {
+    text-emphasis: none;
+    text-decoration: none;
+    font-family: 16px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #ebebeb;
+  }
+  
