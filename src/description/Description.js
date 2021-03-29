@@ -4,13 +4,14 @@ import {
   BoxContainer,
   DateContainer,
   TextContainer,
-  TextTitle
+  TextTitle,
+  CustomDescritptionContainer
 } from "./styled";
 
 export default function Description() {
   return (
     <ScrollableAnchor id={"aPropos"}>
-      <div>
+      <CustomDescritptionContainer>
         <TextTitle>Experiences</TextTitle>
         <DescriptionContainer>
           <BoxContainer>
@@ -47,7 +48,7 @@ export default function Description() {
             </TextContainer>
           </BoxContainer>
         </DescriptionContainer>
-      </div>
+      </CustomDescritptionContainer>
     </ScrollableAnchor>
   );
 }
