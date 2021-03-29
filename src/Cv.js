@@ -7,11 +7,24 @@ import Portfolio from "./portfolio/Portfolio";
 import Description from "./description/Description";
 import { CvContainer } from "./styled";
 import Navigation from "./navigation/Navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Info from "./info/Info";
 
 export default function Cv() {
   const [onOff, setOnOff] = useState(false);
+  const [profil,setProfil] = useState({});
+
+  useEffect(() => {
+    let url = "https://api.github.com/users/Zubiik";
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((responseJson) => {
+        setProfil(responseJson);   
+      });    
+  }, [])
+
 
   const onOffCallback = () => {
     console.log("coucou");
@@ -28,7 +41,7 @@ export default function Cv() {
       <Info onOffCallback={() => onOffCallback()} />
       <CvContainer>
         <Navigation />
-        <Header />
+        <Header profil={profil}/>
         <Skills />
         <Description />
         <Portfolio />
