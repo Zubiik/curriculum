@@ -12,6 +12,6 @@ export const CustomArrow = styled(ArrowUpwardIcon)`
 
 export const UpContainer = styled.div`
   position: fixed;
-  right: 120px;
+  right: 100px;
   bottom: 10px;
 `;

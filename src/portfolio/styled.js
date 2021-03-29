@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
 
+export const CustomPortfolioContainer = styled.div`
+min-height:710px;
+`;
+
 export const ImageLink = styled.img`
   height: 100%;
   width: 100%;

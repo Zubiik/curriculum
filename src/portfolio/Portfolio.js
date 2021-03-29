@@ -2,7 +2,8 @@ import {
     ImageLink,
     PortfolioContainer,
     TextTitle,
-    ImageContain
+    ImageContain,
+    CustomPortfolioContainer
   } from "./styled";
   import { mock } from "./mock";
   import ScrollableAnchor from "react-scrollable-anchor";
@@ -13,7 +14,7 @@ import {
     };
     return (
       <ScrollableAnchor id={"portfolio"}>
-        <div>
+        <CustomPortfolioContainer>
           <TextTitle>Portfolio</TextTitle>
           <PortfolioContainer>
             {mock.projet.map((item, index) => {
@@ -28,7 +29,7 @@ import {
               );
             })}
           </PortfolioContainer>
-        </div>
+        </CustomPortfolioContainer>
       </ScrollableAnchor>
     );
   }

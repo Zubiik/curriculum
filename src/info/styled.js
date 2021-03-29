@@ -8,6 +8,7 @@ export const CustomInfo = styled(InfoIcon)`
   position: fixed;
   z-index: 2;
   right: 120px;
-  top: 0px;
+  top: 20px;
 `;
-export const UpContainer = styled.div``;
+export const UpContainer = styled.div`
+`;
