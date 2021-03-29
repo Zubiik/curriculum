@@ -15,7 +15,7 @@ import {
         <div>
           <HeaderContainer>
             <TextContainer>
-              <CustomText>Elodie Jolie</CustomText>
+              <CustomText>Elodie Jolie lala</CustomText>
               <CustomText>{profil.bio}</CustomText>
             </TextContainer>
             <ImageCustom src={profil.avatar_url} />
