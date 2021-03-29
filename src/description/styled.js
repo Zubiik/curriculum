@@ -1,5 +1,14 @@
 import styled from "@emotion/styled";
 
+export const CustomDescritptionContainer = styled.div`
+height:710px;
+display: flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+`;
+
+
 export const DescriptionContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -36,3 +45,4 @@ export const TextContainer = styled.div`
 export const TextTitle = styled.p`
   font-size: ${({ theme }) => theme.fontSize.title};
 `;
+
