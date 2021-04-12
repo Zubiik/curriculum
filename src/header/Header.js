@@ -7,7 +7,6 @@ import {
   import ScrollableAnchor from "react-scrollable-anchor";
   
   export default function Header({profil}) {
-    console.log("coucu", profil);
   
 
     return (
@@ -15,7 +14,7 @@ import {
         <div>
           <HeaderContainer>
             <TextContainer>
-              <CustomText>Elodie Jolie lala</CustomText>
+              <CustomText>Elodie Jolie lala  lilou la</CustomText>
               <CustomText>{profil.bio}</CustomText>
             </TextContainer>
             <ImageCustom src={profil.avatar_url} />
